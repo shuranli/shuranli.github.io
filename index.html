@@ -1,69 +1,209 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-<!--metadata goes in head -->
-
-
-<title> My first page </title>
-</head>
-<body>
-
-<p id = "p1"> Problem 1: Identify which of the following are valid Javascript types (i.e. can be returned as
-output from the typeof() function). For each valid type provide an example using
-console.log(typeof( ... )).
-<br></br>
-The following are balid JavaScript Types: boolean, number, object,string and undefined
-
-<script>
-//boolean
-console.log(typeof true);
-//number
-console.log(typeof 123);
-//object
-console.log(typeof (person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}));
-//string
-console.log(typeof "hello");
-//undefined
-console.log(typeof hello);
-</script>
-</p>
-
-<p id = "p2">
-a is a Syntax error, the right syntax should be JSON.parse('{"string":"string"}');
-<script>
-console.log(JSON.parse(' { "name": "Data-driven web applications" }'));
-</script>
-<br></br>
-
-b: comments are not allowed in parse
-<script>
-/* the next variable is a course number */
-console.log(JSON.parse('{ "number": 3300}'));
-</script>
-
-c: syntax of parse multiple json object: JSON.parse('[{name,value},{name,value},{name,value}]');
-<script>
-console.log(JSON.parse('[{ "name":"DDWA","number":3300},{"name":"Java","number":2110},{"name":"Python","number":1110 }]'));
-</script>
-
-
-</p>
-
-<p id = "p3">
-</p>
-
-<script>
-	obj=[{"name":value},{"name":value},{}]
-var jobj = [{"student":false,"age":30, "class":[ "econ", "accounting", "business"]},
-{"student":true,"age":18, "class":[ "info", "cs", "meng"]},
-{"student":true,"age":22, "class":[ "film", "design", "art"]}];
-
-console.log(jobj);
-</script>
-
-<p id = "p4">
-Student will get a zero if they don't submit the work by the deadline or they submit the wrong work. Students can drop two lowest hw grades. 
-</p>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Shuran Li</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- FAVICON -->
+		<link rel="icon" type="image/png" href="assets/img/logo.png">
+		<!-- FONTS -->
+		<link rel="stylesheet" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/fonts/iconsmind/iconsmind.css">
+		<!-- STYLESHEETS -->
+		<link rel="stylesheet" href="assets/css/plugins.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<div class="vl-site-holder animsition vl-footer-fixed">
+			<div class="vl-content-holder">
+				<header class="vl-header-holder vl-header-fixed" data-header-fixed="1">
+					<div class="container">
+						<div class="vl-header-inner">
+							<div class="vl-header-left">
+								<a href="index.html" class="vl-site-logo">
+								<img src="assets/img/logo.png" alt="Shuran" style="max-height: 50px"> 
+								</a>
+							</div>
+							<div class="vl-header-right">
+								<div class="vl-menu-toggle vl-fullscreen-menu-toggle" data-before-text="Menu">
+									<span class="line line-one"><span class="inner"></span></span>
+									<span class="line line-two"><span class="inner"></span></span>
+									<span class="line line-three"><span class="inner"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- /.vl-header-holder vl-header-fixed -->
+				<div class="vl-navigation-fullscreen-holder">
+					<div class="vl-navigation-fullscreen">
+						<ul>
+							<!-- <li><a href="index.html">Home</a></li> -->
+							<li><a href="index.html">HOME</a></li>
+							<li class="menu-item-has-children">
+								<a href="#" class="no-anims">Portfolio</a>
+								<ul class="sub-menu">
+									<li><a href="truman.html">Truman</a></li>
+									<li><a href="eatr.html">Eatr</a></li>
+									<li><a href="starstruck.html">Starstruck</a></li>
+									<li><a href="bi.html">Ejournal Manager</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="index.html">Resume</a></li>
+						</ul>
+						
+						<!-- /.vl-navigation-socials -->
+					</div>
+				</div>
+				<!-- /.vl-navigation-fullscreen-holder -->
+				
+				<div class="vl-hero-title-holder jarallax" style="background-image: url('assets/img/bg.gif');">
+					<div class="vl-hero-title-inner">
+						<h1 class="vl-hero-title">Hello, My name is Shuran Li</h1>
+						<p class="vl-hero-subtitle">UIUX Designer</p>
+					</div>
+				</div>
+				<!-- /.vl-hero-title-holder -->
+				<main class="vl-main-holder vl-main-padding">
+					<div class="container">
+						<div class="vl-portfolio-grid-filters">
+							<div data-filter="*" class="cbp-filter-item cbp-filter-item-active"><span>All</span></div>
+							<div data-filter=".portfolio_category-design" class="cbp-filter-item"><span>UI/UX</span></div>
+							<div data-filter=".portfolio_category-branding" class="cbp-filter-item"><span>PRODUCT</span></div>
+							<div data-filter=".portfolio_category-photo" class="cbp-filter-item"><span>DATA</span></div>
+						</div>
+						<div class="vl-portfolio-grid cubeportfolio" id="cubeportfolio">
+							<article class="cbp-item vl-portfolio-grid-item vl-portfolio-style2 portfolio_category-design">
+								<div class="vl-portfolio-grid-image">
+									<a class="vl-portfolio-grid-link" href="truman.html">
+									<img src="assets/img/cover/truman2.png" alt="">		
+									</a>
+								</div>
+								<div class="vl-portfolio-grid-content">
+									<h2 class="vl-portfolio-grid-title">Truman Research Platform</h2>
+									<p class="vl-portfolio-grid-cat">Cornell Social Media Lab</p>
+									<p class="vl-portfolio-grid-cat">UI/UX Design</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vl-portfolio-grid-item vl-portfolio-style2 portfolio_category-design">
+								<div class="vl-portfolio-grid-image">
+									<a class="vl-portfolio-grid-link" href="eatr.html">
+									<img src="assets/img/cover/eatr2.png" alt="">	
+									</a>
+								</div>
+								<div class="vl-portfolio-grid-content">
+									<h2 class="vl-portfolio-grid-title">Eatr</h2>
+									<p class="vl-portfolio-grid-cat">Mobile App</p>
+									<p class="vl-portfolio-grid-cat">UI/UX Design</p>
+								</div>
+							</article>
+							<article class="cbp-item vl-portfolio-grid-item vl-portfolio-style2 portfolio_category-branding">
+								<div class="vl-portfolio-grid-image">
+									<a class="vl-portfolio-grid-link" href="starstruck.html">
+									<img src="assets/img/cover/star.png" alt="">	
+									</a>
+								</div>
+								<div class="vl-portfolio-grid-content">
+									<h2 class="vl-portfolio-grid-title">Starstruck</h2>
+									<p class="vl-portfolio-grid-cat">A Kinetic Light Display with interactive interface</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vl-portfolio-grid-item vl-portfolio-style2 portfolio_category-photo">
+								<div class="vl-portfolio-grid-image">
+									<a class="vl-portfolio-grid-link" href="bi.html">
+									<img src="assets/img/cover/bi2.png" alt="">	
+									</a>
+								</div>
+								<div class="vl-portfolio-grid-content">
+									<h2 class="vl-portfolio-grid-title">Ejournal Manager</h2>
+									<p class="vl-portfolio-grid-cat">Cornell Library</p>
+									<p class="vl-portfolio-grid-cat">Business Intelligence Development</p>
+								</div>
+							</article>
+							
+							
+					</div>
+				</main>
+				<!-- /.vl-main-holder vl-main-padding -->
+			</div>
+			<!-- /.vl-content-holder -->
+			<footer class="vl-footer-holder vl-footer-minimal" data-footer-fixed="1">
+				<div class="vl-footer-inner">
+					<div class="container">
+						<div class="text-center">
+							<a href="index.html" class="vl-site-logo">
+							<img src="assets/img/logo.png" alt="logo" style="max-height: 50px">
+							</a>
+							<div class="vl-footer-menu">
+								<div>
+									<ul>
+										<li>
+											<a href="#">Works</a>
+										</li>
+										<li>
+											<a href="#">About</a>
+										</li>
+										<li>
+											<a href="#">Contact</a>
+										</li>
+										<li>
+											<a href="#">Purchase</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="vl-footer-copyright">
+								<p>Copyright © 2018 Shuran Li </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /.vl-footer-holder -->
+		</div>
+		<!-- /.vl-site-holder -->
+		<a href="#" class="vl-back-to-top hidden"><i class="fa fa-angle-up"></i></a>
+		<!-- /.vl-back-to-top -->
+	</body>
+	<!-- SCRIPTS -->
+	<script src="assets/vendors/jquery.min.js"></script>
+	<script src="assets/scripts/plugins.min.js"></script>
+	<script type="text/javascript">
+		jQuery.noConflict()(function($){
+			var gridContainer = $('#cubeportfolio');
+			gridContainer.imagesLoaded(function(){
+				gridContainer.cubeportfolio({
+					defaultFilter: '*',
+					filters: '.vl-portfolio-grid-filters',
+					animationType: 'fadeOut',
+					layoutMode: 'grid', //mosaic
+						sortToPreventGaps: true,
+					gapHorizontal: 30,
+					gapVertical: 30,
+					gridAdjustment: 'responsive',
+					mediaQueries: 
+					[{
+						width: 1170,
+						cols: 3,
+					}, {
+						width: 991,
+						cols: 3,
+					}, {
+						width: 767,
+						cols: 2,
+					}, {
+						width: 575,
+						cols: 1,
+					}],
+					displayType: 'default',
+					displayTypeSpeed: 150,
+				});
+			});
+		});
+	</script>
+	<script src="assets/scripts/script.js"></script>
 </html>

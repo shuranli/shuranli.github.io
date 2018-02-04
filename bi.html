@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Shuran Li</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- FAVICON -->
+		<link rel="icon" type="image/png" href="assets/img/logo.png">
+		<!-- FONTS -->
+		<link rel="stylesheet" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/fonts/iconsmind/iconsmind.css">
+		<!-- STYLESHEETS -->
+		<link rel="stylesheet" href="assets/css/plugins.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<div class="vl-site-holder animsition vl-footer-fixed">
+			<div class="vl-content-holder">
+				<header class="vl-header-holder vl-header-fixed" data-header-fixed="1">
+					<div class="container">
+						<div class="vl-header-inner">
+							<div class="vl-header-left">
+								<a href="index.html" class="vl-site-logo">
+								<img src="assets/img/logo.png" alt="logo" style="max-height: 50px"> 
+								</a>
+							</div>
+							<div class="vl-header-right">
+								<div class="vl-menu-toggle vl-fullscreen-menu-toggle" data-before-text="Menu">
+									<span class="line line-one"><span class="inner"></span></span>
+									<span class="line line-two"><span class="inner"></span></span>
+									<span class="line line-three"><span class="inner"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- /.vl-header-holder vl-header-fixed -->
+				<div class="vl-navigation-fullscreen-holder">
+					<div class="vl-navigation-fullscreen">
+						<ul>
+							<!-- <li><a href="index.html">Home</a></li> -->
+							<li><a href="index.html">HOME</a></li>
+							<li class="menu-item-has-children">
+								<a href="#" class="no-anims">Portfolio</a>
+								<ul class="sub-menu">
+									<li><a href="truman.html">Truman</a></li>
+									<li><a href="eatr.html">Eatr</a></li>
+									<li><a href="starstruck.html">Starstruck</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="index.html">Resume</a></li>
+						</ul>
+						<div class="vl-navigation-socials">
+							<ul>
+								<li><a href="#" class="tooltip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#" class="tooltip" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="#" class="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="tooltip" title="YouTube"><i class="fa fa-youtube"></i></a></li>
+							</ul>
+						</div>
+						<!-- /.vl-navigation-socials -->
+					</div>
+				</div>
+				<!-- /.vl-navigation-fullscreen-holder -->
+				<main class="vl-main-holder">
+				<main class="vl-main-holder vl-main-padding">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-1"></div>
+							<div class="col-md-10">
+								<div class="vl-post-content vl-post-single">
+			
+					<!-- /.vl-main-padding -->
+					<section class="vl-main-padding-bottom">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4">
+									<table class="vl-project-meta">
+										<tbody>
+											<img src="assets/img/bi/bar.png">
+										</tbody>
+									</table>
+									<!-- /.vl-project-meta -->
+								</div>
+								<div class="col-md-8">
+									<div class="vl-custom-title-holder">
+										<h1 class="text-center">EJOURNAL MANAGER</h1>
+										<p class="text-center">A Tool for managing the University’s library funds wisely</p>
+									</div>
+									<!-- /.vl-custom-title-holder -->
+									<!-- about -->
+									<h3 class="text-left">ABOUT</h3>
+									<P>In this project, we built a tool to manage e-journals and book packages in Cornell library. This tool could help library to evaluate electronic journal and book packages in order to manage the University’s limited funds wisely. It includes logical dimensional data modeling, ETL documentation and data visualization.  </p>
+									<img class = "img-center" src="assets/img/bi/process.png">
+									
+									</div>
+									</div>
+
+									<h3 class="text-left">DIMENSIONAL DATA MODELING</h3>
+									
+									<img class = "img-center" src="assets/img/bi/model.svg">
+									
+									<br></br>
+									<h3 class="text-left">DATA INSIGHTS</h3>
+									<p>In the below worksheet, the ISSNs are sorted by total usage (year is disregarded). Through comparing the first and second image, we can observe that there is a long tail of ISSNs that are used very infrequently/not used at all.</p> <p>There are a few ISSNs which have a lot of usage, while the vast majority of ISSNs (journals) are not accessed very often. In this data, we can see that many of the eJournals that Cornell subscribes to are not accessed very often/at all. From the business perspective, this indicates that Cornell may consider decreasing the number of eJournals it subscribes to, which will cut costs while having a negligible impact on users.</p>
+									<!-- <br></br> -->
+									<img class = "img-center" src="assets/img/bi/usage.svg">
+									<br></br>
+
+									<p>The following graph is another representation of the turnaway activity of the journals, arranged in descending order by the number of turnaways. 
+									Concentrated number of eJournals with high amounts of turnaways, and many eJournals with very few turnaways. This suggests that Cornell may want to focus their resources on ensuring that the few eJournals that have high amounts of turnaways are available, since users are unsuccessfully requesting those the most. </p>
+									<img class = "img-center" src="assets/img/bi/turnaway.svg">
+									<br></br>
+
+									<p>The worksheet below show the relationship between usage and turnaway. There are a select few number of eJournals (ISSNs) that are in high demand (high turnaway activity, which indicates that a lot of people are trying to access them). 
+									There is very low usage for most of them, which indicates that either Cornell has subscribed in the past and should resubscribe, or that Cornell should start subscribing to those journals. </p>
+									<img class = "img-center" src="assets/img/bi/ut.svg">
+									<br></br>
+
+									<p>I also provide relationships between journal providers and outrage type. It can help librarian figured out the source of the outage.  </p>
+									<img class = "img-center" src="assets/img/bi/up.svg">
+
+									
+
+
+									
+
+
+									<div class="vl-post-share" id="vlthemes_el_599c40759c02c"><a class="twitter" target="_blank" href="#"><i class="fa fa-twitter"></i></a><a class="facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a><a class="linkedin" target="_blank" href="#"><i class="fa fa-linkedin"></i></a><a class="pinterest" target="_blank" href="#"><i class="fa fa-pinterest"></i></a><a class="google_plus" target="_blank" href="#"><i class="fa fa-google-plus"></i></a></div>
+									<!-- /.vl-post-share -->
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- /.vl-main-padding-bottom -->
+					<nav class="vl-portfolio-navigation">
+						<div class="container">
+							<div class="vl-portfolio-navigation-inner">
+								<div class="prev-post">
+									<a href="#"><i class="fa fa-angle-left"></i>Previous Project</a>
+								</div>
+								<div class="next-post"><a href="#">Next Project<i class="fa fa-angle-right"></i></a></div>
+							</div>
+						</div>
+					</nav>
+					<!-- /.vl-portfolio-navigation -->
+				</main>
+				<!-- /.vl-main-holder -->
+			</div>
+			<!-- /.vl-content-holder -->
+			<footer class="vl-footer-holder vl-footer-minimal" data-footer-fixed="1">
+				<div class="vl-footer-inner">
+					<div class="container">
+						<div class="text-center">
+							<a href="index.html" class="vl-site-logo">
+							<img src="assets/img/logo.png" alt="Vinero" style="max-height: 50px">
+							</a>
+							<div class="vl-footer-menu">
+								<div>
+									<ul>
+										<li>
+											<a href="#">Works</a>
+										</li>
+										<li>
+											<a href="#">About</a>
+										</li>
+										<li>
+											<a href="#">Contact</a>
+										</li>
+										<li>
+											<a href="#">Purchase</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="vl-footer-copyright">
+								<p>Design and Develope by Shuran Li</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /.vl-footer-holder -->
+		</div>
+		<!-- /.vl-site-holder -->
+		<a href="#" class="vl-back-to-top hidden"><i class="fa fa-angle-up"></i></a>
+		<!-- /.vl-back-to-top -->
+	</body>
+	<!-- SCRIPTS -->
+	<script src="assets/vendors/jquery.min.js"></script>
+	<script src="assets/scripts/plugins.min.js"></script>
+	<script type="text/javascript">
+		jQuery.noConflict()(function($){
+			$('#collage .vl-collage-inner').collagePlus({
+				'allowPartialLastRow': false,
+				'direction': 'vertical',
+				'targetHeight': 340,
+			});
+		});
+	</script>
+	<script src="assets/scripts/script.js"></script>
+</html>
