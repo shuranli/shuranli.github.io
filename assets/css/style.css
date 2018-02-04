@@ -2309,7 +2309,7 @@ td {
 }
 
 .vl-page-navigation a:hover {
-    color: #000;
+    color: rgba(255,255,255,0.5);
 }
 
 .vl-page-navigation a + a {
@@ -2319,7 +2319,7 @@ td {
 ----------------------------------------------------------*/
 .vl-portfolio-navigation {
     padding: 40px 0;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .vl-portfolio-navigation .vl-portfolio-navigation-inner {
@@ -2340,16 +2340,18 @@ td {
 }
 
 .vl-portfolio-navigation .vl-portfolio-navigation-inner a {
-    color: #fff;
+    color: #000000;
 }
 
 .vl-portfolio-navigation .vl-portfolio-navigation-inner a:hover {
-    color: rgba(255,255,255,0.5);
+    color: #757575; 
+    opacity = 0.8;  
 }
 
 .vl-portfolio-navigation .vl-portfolio-navigation-inner .prev-post.inactive,
 .vl-portfolio-navigation .vl-portfolio-navigation-inner .next-post.inactive {
-    color: rgba(255,255,255,0.5);
+    color: #757575; 
+    opacity = 0.8;
     cursor: not-allowed;
 }
 
