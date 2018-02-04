@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--metadata goes in head -->
+
+
+<title> My first page </title>
+</head>
+<body>
+
+<p id = "p1"> Problem 1: Identify which of the following are valid Javascript types (i.e. can be returned as
+output from the typeof() function). For each valid type provide an example using
+console.log(typeof( ... )).
+<br></br>
+The following are balid JavaScript Types: boolean, number, object,string and undefined
+
+<script>
+//boolean
+console.log(typeof true);
+//number
+console.log(typeof 123);
+//object
+console.log(typeof (person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}));
+//string
+console.log(typeof "hello");
+//undefined
+console.log(typeof hello);
+</script>
+</p>
+
+<p id = "p2">
+a is a Syntax error, the right syntax should be JSON.parse('{"string":"string"}');
+<script>
+console.log(JSON.parse(' { "name": "Data-driven web applications" }'));
+</script>
+<br></br>
+
+b: comments are not allowed in parse
+<script>
+/* the next variable is a course number */
+console.log(JSON.parse('{ "number": 3300}'));
+</script>
+
+c: syntax of parse multiple json object: JSON.parse('[{name,value},{name,value},{name,value}]');
+<script>
+console.log(JSON.parse('[{ "name":"DDWA","number":3300},{"name":"Java","number":2110},{"name":"Python","number":1110 }]'));
+</script>
+
+
+</p>
+
+<p id = "p3">
+</p>
+
+<script>
+	obj=[{"name":value},{"name":value},{}]
+var jobj = [{"student":false,"age":30, "class":[ "econ", "accounting", "business"]},
+{"student":true,"age":18, "class":[ "info", "cs", "meng"]},
+{"student":true,"age":22, "class":[ "film", "design", "art"]}];
+
+console.log(jobj);
+</script>
+
+<p id = "p4">
+Student will get a zero if they don't submit the work by the deadline or they submit the wrong work. Students can drop two lowest hw grades. 
+</p>
+</body>
+</html>
